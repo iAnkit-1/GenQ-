@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body{
+  background: black;
+
+}
+
+.main{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ), url(college.jpeg);
+    height: 80vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+nav{
+    max-width: 80vw;
+    justify-content: space-between;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    height: 100px;
+
+  
+}
+nav ul{
+    list-style: none;
+}
+
+nav ul:nth-child(1)>li>a{
+    font-size: 38px;
+    font-weight: bold;
+    font-family :cursive;
+    text-shadow: -5px 2px 5px rgba(0,0,0,0.68);
+}
+nav ul:nth-child(2){
+    display: flex;
+    gap: 2em;
+    text-shadow: -5px 2px 5px rgba(0,0,0,0.68);
+    
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: bold;
+    color: rgb(244, 141, 23);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+nav ul li a:hover{
+  color: white;
+}
+.box{
+    font-family: 'Martel Sans', sans-serif;
+    height: calc(100% - 100px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(244, 141, 23);
+    position: relative;     /* pushes in front of black box */
+    gap: 23px;
+    padding: 0 30px;
+}
+
+.box> :nth-child(1){
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.box> :nth-child(2){
+    font-weight: 400;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+}
+
+.btn-1{
+  padding: 8px;
+  color: rgb(244, 141, 23);
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgba(94, 85, 85, 0.412);
+  cursor: pointer;
+  border: 1px solid rgb(244, 141, 23);
+}
+.btn-2{
+    background-color:rgb(244, 141, 23);
+    padding: 8px;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 12px 0px;
+    border: 1px solid rgb(244, 141, 23);
+}
+.btn-1:hover{
+  background-color:rgb(244, 141, 23);
+  padding: 8px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 12px 0px;
+  border: 1px solid rgb(244, 141, 23);
+}
+.btn-2:hover{
+  padding: 8px;
+  color: (244, 141, 23);
+  font-size: 20px;
+  font-weight: 400;
+  background-color: rgba(94, 85, 85, 0.412);
+  cursor: pointer;
+  border: 1px solid rgb(244, 141, 23);
+}
+
+.separation{
+    height: 7px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    z-index: 20;
+}
+
+.first{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: wheat;
+}
+.first h1{
+  color: rgb(244, 141, 23);
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
+  font-size: 35px;
+  text-align: center;
+}
+.first p{
+  color: white;
+  line-height: 1.5;
+  font-size: 25px;
+  text-align: center;
+}
+.first div{
+  margin: 2em;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.first img{
+  width: 400px;
+  height: auto;
+}
+.h-custom {
+height: calc(100% - 73px);
+}
+@media (max-width: 450px) {
+.h-custom {
+height: 100%;
+}
+}
+/* Slideshow container */
+.slid{
+  /* background: linear-gradient(-45deg,
+  rgba(150, 147, 147, 0.7), 
+  rgba(0, 0, 0, 0.7)); */
+  background-color: white;
+  margin: 3em;
+
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  
+.login{
+  /* background: linear-gradient(-45deg,
+    rgba(150, 147, 147, 0.7), 
+    rgba(0, 0, 0, 0.7)); */
+  
+ display: flex;
+  align-items: center;
+ justify-content: space-evenly;
+ padding: 3em;
+}
+.login img{
+  width: 25em;
+  margin-right: 4em;
+  border-radius: 50%;
+}
+.log{
+padding: 3em;
+ background-color: rgba(37, 36, 36, 0.3);
+ color: rgb(244, 141, 23);
+}
+.log > h1{
+  font-size: 40px;
+  font-weight: bolder;
+  font-family: 'Poppins', sans-serif;
+}
+.log>p{
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  word-wrap: normal;
+  font-weight: 300;
+}
+.log input{
+  padding: 0.8rem;
+  width: 20rem;
+  margin-bottom: 1rem;
+  background-color: rgba(230, 224, 224, 0.104);
+}
+.log button{
+  padding: 10px;
+  width: 300px;
+  margin-bottom: 5px;
+  background: rgb(244, 141, 23);
+  font-weight: 800;
+  font-size: 18px;
+  color: white;
+}
+.log a{
+  color: rgb(244, 141, 23);
+  text-decoration: none;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+   max-width: 100%;
+   align-items: center;
+   color: #fff;
+   background-color: rgba(37, 36, 36, 0.3);
+   margin: 5em;
+   padding: 5em;
+
+  }
+
+  .row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .row div{
+    margin: 15px;
+   
+  }
+  
+  .nai h1 {
+    margin-top: 1em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+    color: rgb(244, 141, 23);
+    }
+    
+  
+    
+    .service {
+      text-align: center;
+      line-height: 2;
+      padding: 25px 10px;
+      border-radius: 5px;
+      font-size: 14px;
+      cursor: pointer;
+      background: rgba(230, 224, 224, 0.163);
+      transition: transform 0.5s, background 0.5s;
+    }
+    
+    .service i {
+      font-size: 40px;
+      margin-bottom: 10px;
+      color: rgb(244, 141, 23);
+    }
+    
+    .service h2 {
+      font-weight: 600;
+      color: rgb(244, 141, 23);
+    }
+    
+    .service:hover {
+      background: rgb(244, 141, 23);
+      color: #fff;
+      transform: scale(1.05);
+    }
+    
+    .service:hover i{
+      color: #fff;
+    }
+    .service:hover h2{
+      color: #fff;
+    }
+    
+
+.faq{
+    background: black;
+    color: rgb(244, 141, 23);
+    padding: 34px;
+}
+
+.faq h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 48px;
+    text-align: center;
+}
+
+.faqbox{
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    background-color: rgb(37, 36, 36);
+    justify-content: space-between;
+    padding: 24px;
+  max-width: 60vw;
+  margin: 34px auto;
+    color: white;
+    cursor: pointer;
+}
+.faqbox svg{
+    filter: invert(1);
+}
+.faqbox:hover{
+    background-color: #414141;
+}
+
+footer{
+    width: 100%;
+    height: 400px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p:nth-child(1){
+    font-size:30px;
+    color: rgb(244, 141, 23);
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+footer p:nth-child(2){
+    font-size:17px;
+    color: rgb(98, 95, 95);
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+}
+
+.social{
+    display: flex;
+}
+.social a{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(244, 141, 23);
+    border-radius: 50%;
+    margin: 22px 10px;
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+    background: aliceblue;
+    color: rgb(244, 141, 23);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 1024px) {
+  .slid .slideshow-container {
+    max-width: 800px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main {
+    height: 50vh;
+    width: 100vw;
+  }
+  .box {
+    height: auto;
+  }
+  .box > :nth-child(1) {
+    font-size: 26px;
+  }
+  .slid .slideshow-container {
+    max-width: 50vw;
+    height: auto;
+    align-items: center;
+    margin: auto;
+  }
+ .first{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+
+ .first img{
+  max-width: 70vw;;
+ }
+ .login{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ }
+ .login img{
+  width: 70vw;
+  margin: auto;
+  display: block;
+  margin-bottom: 2em;
+ }
+ .row{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60vw;
+ }
+ .contact{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+ }
+ .contact p{
+  text-align: center;
+  word-wrap: break-word;
+ }
+}
+/* For webkit based browsers like Chrome, Safari, etc. */
+::-webkit-scrollbar {
+  width: 5px; /* width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #000; /* color of the track */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333; /* color of the scrollbar */
+  border-radius: 6px; /* roundness of the scrollbar thumb */
+}
+
+@media only screen and (max-width: 600px) {
+  .nav ul:nth-child(1)>li>a {
+    font-size: 28px;
+  }
+  .nav ul li a {
+    font-size: 18px;
+  }
+  .first > div :nth-child(1) {
+    font-size: 32px;
+  }
+  .log img {
+    width: 15em;
+    margin-right: 2em;
+  }
+  .log input {
+    width: 16rem;
+  }
+  .log button {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .nav ul:nth-child(1)>li>a {
+    font-size: 24px;
+  }
+  .nav ul li a {
+    font-size: 16px;
+  }
+  .first > div :nth-child(1) {
+    font-size: 24px;
+  }
+  .log img {
+    width: 10em;
+    margin-right: 2em;
+  }
+  .log input {
+    width: 14rem;
+  }
+  .log button {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .nav ul:nth-child(1)>li>a {
+    font-size: 20px;
+  }
+  .nav ul li a {
+    font-size: 14px;
+  }
+  .first > div :nth-child(1) {
+    font-size: 20px;
+  }
+  .log img {
+    width: 8em;
+    margin-right: 2em;
+  }
+  .log input {
+    width: 12rem;
+  }
+  .log button {
+    width: 120px;
+  }
+}

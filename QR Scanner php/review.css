@@ -1,0 +1,70 @@
+* {
+    font-family: sans-serif;
+    
+}
+
+body {
+    text-align: center;
+    background-color: black;
+    
+}
+
+form{
+    width: 500px;
+    margin: auto;
+    padding: 25px;
+   
+    background: #5a5953
+}
+form>h1{
+    color: rgb(244, 141, 23);
+}
+
+.btn {
+    padding: 5px 18px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0px 25px;
+    color: white;
+    background-color:  rgb(244, 141, 23);
+}
+
+input {
+    width: 80%;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+}
+
+textarea {
+    width: 80%;
+    height: 80px;
+}
+
+.comments-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+}
+
+.comment {
+    border-radius: 15px;
+    color: white;
+    background: #908e8659;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.comment h4 {
+    color: rgb(244, 141, 23);
+}
+
+.comment h4 > span {
+    color: rgb(124, 123, 121);
+    font-size: 12px;
+}
+
+.comment p {}
+
+

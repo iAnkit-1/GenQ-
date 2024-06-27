@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gen QR</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+ <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+ 
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: black;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .head1{
+          position: relative;
+          color: rgb(244, 141, 23);
+         margin-top: 2em;
+          text-align: center;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          font-size: 38px;
+        }
+
+.form{
+    margin-top: 3em;
+    background-color: rgba(37, 36, 36, 0.3);
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+.frmbg{
+    color: rgb(244, 141, 23);
+   background: rgba(230, 224, 224, 0.163);
+   padding: 3em;
+   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input{
+margin: 10px;
+padding: 18px;
+width: 389px;
+background-color: rgba(223, 219, 219, 0.804);
+border: none;
+}
+input::placeholder{
+    color: black;
+}
+
+select{
+margin: 20px;
+padding: 18px;
+width: 389px;
+background-color: rgba(223, 219, 219, 0.804);
+border: none;
+}
+
+.clr{
+    background: rgb(8, 1, 1);
+   color: rgb(244, 141, 23);
+}
+
+   
+
+
+#qr{
+    color: white;
+   padding: 5px;
+    margin-right: 6px;
+}
+
+.getqr{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.getqr h1{
+    position: relative;
+
+    
+     color: rgb(244, 141, 23);
+}
+.btn-2{
+    position: relative;
+    background-color:rgb(244, 141, 23);
+    padding: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    margin-top: 8px;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+    width: 200px;
+}
+
+.btn-2:hover{
+    align-content: center;
+  padding: 8px;
+  color: (244, 141, 23);
+  background-color: rgba(94, 85, 85, 0.412);
+  cursor: pointer;
+  border: 1px solid rgb(244, 141, 23);
+}
+
+.carousel-inner{
+width: auto;
+}
+@media only screen and (min-width: 1200px) {
+  /* Styles for big screens, laptops, and computers */
+  .form {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .frmbg {
+    padding: 2em;
+  }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 768px) {
+  /* Styles for tablets */
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles for mobile phones */
+  .head1 {
+    font-size: 28px;
+  }
+  .form {
+    flex-direction: column;
+    align-items: center;
+  }
+  tr{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    max-width: 80vw;
+  }
+  input, select {
+    width: calc(100% - 20px); /* Adjust the width as needed */
+    margin: 5px 10px; /* Add some margin between input fields */
+  }
+  .btn-2 {
+    width: calc(100% - 20px); /* Adjust the width as needed */
+    margin: 10px; /* Add some margin around the button */
+  }
+}
+
+
+    </style>
+
+</head>
+<body>
+    <h1 class="head1">Student QR Code Generator</h1>
+
+<div class="form" id="form">
+   
+      <form class="frmbg" action target="_self">
+       <h1>Fill Student Record Here</h1>
+<table class="tbl">
+<tr>
+ <td><input type="text" placeholder="Enter the Student Name" id="name" required ></td>
+
+ <td> <select name="batch" id="batch" required>
+  <option value="none" class="clr" >Select Your Batch</option>
+  <option value="2020-2024" class="clr">2020-2024</option>
+  <option value="2021-2025" class="clr">2021-2025</option>
+  <option value="2022-2026" class="clr">2022-2026</option>
+  <option value="2023-2027" class="clr">2023-2027</option>
+</select></td>
+</tr>
+
+<tr>
+  <td><input type="text" placeholder="Enter Roll Number" id="rollno" required></td>
+  
+  <td> <select name="branch" id="branch" required>
+    <option value="none" class="clr">Select Your Branch</option>
+    <option value="CSE" class="clr">CSE</option>
+    <option value="Electronics" class="clr">Electronics</option>
+    <option value="Electrical" class="clr">Electrical</option>
+    <option value="Mining" class="clr">Mining</option>
+  </select></td>
+</tr>
+
+<tr>
+  <td><input type="text" placeholder="Enter the Room Number" id="roomno" required></td>
+
+   <td> <select name="hostel" id="hostel" required>
+    <option value="none" class="clr">Select Your Hostel</option>
+    <option value="BH-1" class="clr">BH-1</option>
+    <option value="BH-2" class="clr">BH-2</option>
+    <option value="BH-3" class="clr">BH-3</option>
+    <option value="GH" class="clr">GH</option>
+  </select></td>
+  
+</tr>
+
+</table>
+      </form>
+      <div class="getqr">
+        <h1>Get Your QR Code Here</h1>
+        <div id="qrcode" class="qrcode"><img src="" alt=""></div>
+        <button class="btn-2 " onclick="generateqr()">Get QR<span id="qr" class="material-symbols-outlined ">
+          qr_code_scanner
+          </span></button>
+          <button class="btn-2" id="download">Download <span id="qr" class="material-symbols-outlined">
+            download
+            </span></button>
+      </div>
+  </div>
+
+
+  
+
+  <script>
+    
+    function generateqr()
+    {
+      const name= document.getElementById('name').value;
+      var batch= document.getElementById('batch').value;
+      var rollno= document.getElementById('rollno').value;
+      var branch= document.getElementById('branch').value;
+      var roomno= document.getElementById('roomno').value;
+      var hostel= document.getElementById('hostel').value;
+
+
+      if(name=="" || batch==null || rollno=="" || branch=="none"|| roomno=="" || hostel==null)
+      {
+        alert('Please enter your details')
+        return ;
+      }
+
+      var urldata = 'Name: ' + name + " "+
+              'Batch: ' + batch + " "+
+              'Roll No: ' + rollno + " "+
+              'Branch: ' + branch + " "+
+              'Room No: ' + roomno + " "+
+              'Hostel: ' + hostel;
+
+
+    console.log('Name: '+name+" \n"+"Batch: "+batch+"\n"+"Roll No:"+rollno+"\n"+"Branch: "+branch+"\n"+"Room No: "+roomno+"\n"+"Hostel: "+hostel);
+
+    const url2 = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data="+ name + " Batch: "+ batch+ " Roll No: "+ rollno+ " Branch: "+branch+ " Room No: "+ roomno +" Hostel: "+ hostel;
+
+    const url3 = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${urldata}`;
+
+    // const url= "https://chart.googleapis.com/chart?cht=qr&chs=200x200&chl=Name: "+ name + " Batch: "+ batch+ " Roll No: "+ rollno+ " Branch: "+branch+ " Room No: "+ roomno +" Hostel: "+ hostel;
+
+    var ifr=`<iframe src="${url3}" height="200" width="200"></iframe>`;
+
+
+    document.getElementById('qrcode').innerHTML=ifr;
+    }
+
+    const downBtn = document.getElementById('download');
+    downBtn.addEventListener("click", async () => {
+    const qrImg = document.querySelector('#qrcode iframe');
+    const response = await fetch(qrImg.src);
+    const blob = await response.blob();
+    const downLink = document.createElement("a");
+    downLink.href = URL.createObjectURL(blob);
+    downLink.download = "qrcode.jpg";
+    downLink.click();
+});
+      
+    
+    
+  </script>
+
+
+
+ 
+</body>
+</html>

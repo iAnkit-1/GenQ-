@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GenQ</title>
+    <link rel="stylesheet" href="main.css">
+     <!-- Font Awesome CDN-->
+     
+     <link rel="stylesheet" href= 
+     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" /> 
+       
+         <!-- For font family Poppins -->
+         <link rel="preconnect" 
+               href="https://fonts.googleapis.com"> 
+         <link rel="preconnect" 
+               href="https://fonts.gstatic.com" crossorigin> 
+         <link href= 
+     "https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" 
+               rel="stylesheet"> 
+</head>
+<body onload="resetScrollPosition()">
+
+    <div class="main">
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="">Gen<span style="color: white;">Q</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="box" id="about">
+            <span>Create and Share QR
+                Code Instanlty</span>
+
+                <span>Generate custom QR codes for your personal or bussiness needs</span>
+                
+                <div>
+                    <button class="btn-1">Learn More</button>
+                    <button class="btn-2">Get Started</button>
+                </div>     
+        </div>
+      
+    </div>
+    <div class="separation"></div>
+
+    <section class="slid">
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="QR-Code_Wide.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="61a+O3Or7wL.jpg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="infographicswhite_2_800.jpeg" style="width:100%">
+      <div class="text"></div>
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+  
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+  </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="first">
+        <div>
+            <h1>Generate QR Codes Easily
+                and Efficiently</h1>
+            <p>At GenQ, our mission is to revolutionize the way students access their hostel facilities and manage their stay. With GenQ, we empower students to generate their own personalized QR codes, simplifying their access to hostels and making the entire process convenient and hassle-free.</p>
+            <div style="display: flex; flex-direction: row">
+                <button style="margin: 5px;" class="btn-1">Learn More</button>
+                <button class="btn-2">Get Started</button>
+            </div>    
+        </div>
+        <div class="secImg">
+            <img src="blezoo-qr-code-2.gif" alt="">
+        </div>
+    </section>
+
+    <div class="separation"></div>
+
+    <section class="login">
+
+   
+      <img src="reclogo.jpg" alt="">
+  
+      <div class="log">
+          <h1>Welcome</h1>
+          <p>Please login to access your account.</p><br>
+          <!-- <p>Please login to your account.</p> -->
+          <form method="post"  target="_blank">
+              <!-- <?php //echo form_open("UserController/userLogin");?> -->
+            
+              <input type="text" id="username" name="uname" placeholder="Faculty Log in ID" required/><br />
+             
+              <input type="password" id="password" name="password" placeholder="Enter Your Password" required/><br /><br />
+             <button type="submit" class="logbtn" id="logbtn" onclick="checklogin()">Log In</button><br />
+             <a href="#">Forgot Password?</a> | <a href="#">Sign Up</a>
+  
+          </form>
+      </div>
+  
+  </section>
+
+
+    <div class="separation"></div>
+
+
+
+   
+
+    <section class="nai" id="services">
+      <h1>Our Services</h1>
+        <div class="container">
+           
+         
+         <div class="row">
+            <div class="service">
+                <i class="fas fa-laptop-code"></i>
+                <h2>Web Design</h2>
+                <p>
+                  Web design encompasses the art and science of creating visually appealing and functional websites. 
+                </p>
+              </div>
+              <div class="service">
+                <i class="fas fa-chart-line"></i>
+                <h2>Marketing</h2>
+                <p>Marketing is the strategic process of promoting and selling products or services to a target audience. 
+                </p>
+              </div>
+              <div class="service">
+                <i class="fab fa-sketch"></i>
+                <h2>Graphics</h2>
+                <p>
+                  Graphics are the visual representations that captivate, inform, and inspire. 
+                </p>
+              </div>
+         </div>
+             <div class="row">
+                <div class="service">
+                    <i class="fas fa-database"></i>
+                    <h2>Data Analysis</h2>
+                    <p>Data analysis is the process of examining, cleaning, transforming, and interpreting data to uncover meaningful insights, trends, and patterns.
+                    </p>
+                  </div>
+                  <div class="service">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h2>App Development</h2>
+                    <p>
+                      App development is the dynamic process of creating software applications tailored for use on mobile devices, computers, or other digital platforms. 
+                    </p>
+                  </div>
+                
+                
+                  <div class="service">
+                    <i class="fas fa-network-wired"></i>
+                    <h2>Networking</h2>
+                    <p>Networking is connections that underpins society,communication and the exchange of ideasand opportunities.
+                    </p>
+                  </div>
+             </div>
+           
+          </div>
+    </section>
+    <!-- <div class="separation"></div> -->
+
+    <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faqbox">
+            <span>How does your QR code generator work?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+    
+        </div>
+        <div class="faqbox">
+            <span>What types of content can I encode into a QR code using your generator?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+    
+        </div>
+        <div class="faqbox">
+            <span>Is your QR code generator free to use, or are there any fees involved?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+    
+        </div>
+        <div class="faqbox">
+            <span>Can I customize the appearance of the QR codes generated by your platform?</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 4V20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 12H20" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+    
+        </div>
+    </section>
+    <div class="separation"></div>
+    
+   
+
+  <footer id="contact" class="contact">
+    <p>Ankit Pushpjivi</p>
+    <p>For getting a look on my other ongoing project please contact me via given links:</p>
+    <div class="social">
+        <a href="https://github.com/iAnkit-1" target="_blank"><i class="fa-brands fa-github"></i></i></a>
+        <a href="https://www.linkedin.com/in/ankitpushpjivi/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ankitpushpjivi/"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+    <p class="last">©Copyright by Ankit Pushpjivi</p>
+  </footer>
+
+
+
+  <script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+  </script>
+
+  <script>
+    function checklogin() {
+       let uname = document.getElementById('username').value;
+       let upass = document.getElementById('password').value;
+       let form = document.querySelector('form');
+   
+       if (uname === 'admin' && upass === 'rec@1234') {    
+           window.location.href = 'GenQR.html';
+           form.submit(); // submit the form
+       } else if (uname === '' || upass === '') {
+           alert("Please fill all fields!");
+       } else {
+           if (uname !== 'admin') {
+               alert("Wrong Username");
+           } else {
+               alert("Wrong Password");
+           }
+           window.location.href= 'index.html';
+           form.submit(); // submit the form
+       }
+   }
+  </script>
+
+
+</body>
+</html>
